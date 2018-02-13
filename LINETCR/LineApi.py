@@ -41,12 +41,12 @@ class LINE:
       raise Exception("invalid arguments")
 
     self.authToken = self.Talk.authToken
-    self._headers = {'X-Line-Application':'DESKTOPMAC 10.10.2-YOSEMITE-x64','X-Line-Access': self.authToken, 'User-Agent': 'Line/8.0.0'}
+    self._headers = {'X-Line-Application':'DESKTOPMAC\t10.10.2-YOSEMITE-x64\tMAC 4.5.0','X-Line-Access': self.authToken, 'User-Agent': 'Line/8.0.1'}
     self.cert = self.Talk.cert
-    self._headers = {
-              'X-Line-Application': 'DESKTOPMAC 10.10.2-YOSEMITE-x64    MAC 4.5.0',
+    self._headers = {#SELFBOT_MAN_PC
+              'X-Line-Application': 'DESKTOPMAC\t10.10.2-YOSEMITE-x64\tMAC 4.5.0',
               'X-Line-Access': self.authToken, 
-              'User-Agent': 'Line/8.0.0'
+              'User-Agent': 'Line/8.0.1'
    }
     self.Poll = Poll(self.authToken)
     self.channel = channel.Channel(self.authToken)
